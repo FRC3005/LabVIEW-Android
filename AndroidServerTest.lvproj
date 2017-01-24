@@ -108,6 +108,8 @@ AddOutputFilter chunkFilter
 		<Item Name="Adb Bridge.lvclass" Type="LVClass" URL="../AdbBridge/Adb Bridge.lvclass"/>
 		<Item Name="Vision Server.lvclass" Type="LVClass" URL="../Vision Server/Vision Server.lvclass"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
+		<Item Name="Target Vector.ctl" Type="VI" URL="../Vision Server/typedef/Target Vector.ctl"/>
+		<Item Name="Target Message JSON.ctl" Type="VI" URL="../Vision Server/typedef/Target Message JSON.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
