@@ -13,8 +13,15 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Clear Cache.vi" Type="VI" URL="../Clear Cache.vi"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Deployment Tools" Type="Folder">
+			<Item Name="Clear Cache.vi" Type="VI" URL="../Deploy Tools/Clear Cache.vi"/>
+			<Item Name="Deploy Main.vi" Type="VI" URL="../Deploy Tools/Deploy Main.vi"/>
+		</Item>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
@@ -28,6 +35,7 @@
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
 		<Property Name="host.TargetCPUID" Type="UInt">8</Property>
 		<Property Name="host.TargetOSID" Type="UInt">8</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
 		<Property Name="target.DoNotReboot" Type="Bool">true</Property>
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
@@ -97,8 +105,8 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="AdbBridge.lvclass" Type="LVClass" URL="../AdbBridge/AdbBridge.lvclass"/>
-		<Item Name="message json.ctl" Type="VI" URL="../Vision Server/typedef/message json.ctl"/>
+		<Item Name="Adb Bridge.lvclass" Type="LVClass" URL="../AdbBridge/Adb Bridge.lvclass"/>
+		<Item Name="Vision Server.lvclass" Type="LVClass" URL="../Vision Server/Vision Server.lvclass"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
