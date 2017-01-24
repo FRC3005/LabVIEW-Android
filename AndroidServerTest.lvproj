@@ -15,11 +15,14 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Deployment Tools" Type="Folder">
 			<Item Name="Clear Cache.vi" Type="VI" URL="../Deploy Tools/Clear Cache.vi"/>
-			<Item Name="Deploy Main.vi" Type="VI" URL="../Deploy Tools/Deploy Main.vi"/>
+			<Item Name="Plink.vi" Type="VI" URL="../Deploy Tools/Plink.vi"/>
+			<Item Name="PSCP.vi" Type="VI" URL="../Deploy Tools/PSCP.vi"/>
 		</Item>
+		<Item Name="Android Deploy.vi" Type="VI" URL="../Deploy Tools/Android Deploy.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
@@ -108,8 +111,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Adb Bridge.lvclass" Type="LVClass" URL="../AdbBridge/Adb Bridge.lvclass"/>
 		<Item Name="Vision Server.lvclass" Type="LVClass" URL="../Vision Server/Vision Server.lvclass"/>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
-		<Item Name="Target Vector.ctl" Type="VI" URL="../Vision Server/typedef/Target Vector.ctl"/>
-		<Item Name="Target Message JSON.ctl" Type="VI" URL="../Vision Server/typedef/Target Message JSON.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
