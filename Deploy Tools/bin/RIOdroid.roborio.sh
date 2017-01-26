@@ -9,6 +9,12 @@ cd ~/
 tar -zxvf RIOdroid.tar.gz -C /
 echo "[RIOdroid]:Files Extracted"
 
+# Install socat package
+# -------------------------
+opkg install libwrap0_7.6-r10.3_armv7a-vfp-neon.ipk
+opkg install socat_1.7.2.1-r0_armv7a-vfp-neon.ipk
+echo "[RIOdroid]:Socat Installed"
+
 # Make a symbolic link for usb4java
 # -------------------------
 ln -s /lib/ld-linux.so.3 /lib/ld-linux-armhf.so.3
