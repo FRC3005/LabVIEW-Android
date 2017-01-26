@@ -4,18 +4,10 @@
 # -------------------------
 # Copy adb to /bin
 # copy adb.sh to /etc/init.d
-# copy angstrom-base-feed.conf to etc/opkg
-# copy socat_1.7.2.1-r0_armv7a-vfp-neon.ipk to home so we can install it with opkg
 # copy the libusb4java.so to the root directory
 cd ~/
 tar -zxvf RIOdroid.tar.gz -C /
 echo "[RIOdroid]:Files Extracted"
-
-# Install socat package
-# -------------------------
-opkg install libwrap0_7.6-r10.3_armv7a-vfp-neon.ipk
-opkg install socat_1.7.2.1-r0_armv7a-vfp-neon.ipk
-echo "[RIOdroid]:Socat Installed"
 
 # Make a symbolic link for usb4java
 # -------------------------
